@@ -1,0 +1,126 @@
+body {
+  display: block;
+  margin: 0;
+  font-family: Lato, Helvetica, sans-serif;
+}
+
+h1{
+  font-size: 3em; 
+  color:#8A4AC0;
+}
+
+h3{
+  text-decoration: underline;
+}
+
+.l1{
+  padding-top: 10%;
+  padding-right: 30%;
+}
+
+
+#l2{
+  padding-top: 20%;
+  padding-right: 30%;
+}
+
+/* The navigation bar */
+.navbar {
+  display:inline-flex;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+/* Links inside the navbar */
+.navbar li {
+  float: left;
+  display: block;
+  color: #233348;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 16px;
+}
+
+/* Change background on mouse-over */
+.navbar li:hover {
+  color: #814C8A;
+}
+
+.navbar li.active {
+  color: #814C8A;
+  text-decoration: underline;
+}
+
+#showcase{
+  background-image:url("images/hands.png");
+  background-size:cover;
+  background-position:center;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  margin: 0;
+  padding-right: 10%;
+  padding-left: 10%;
+  vertical-align:middle;
+}
+
+#land2{
+  background-color: #FDEFEB;
+  display: flex;
+  height:100vh;
+  margin: 0;
+}
+
+.land{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 10%;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .land {
+    width:100%;
+    flex-direction: column;
+  }
+}
+
+.box{
+  border-style: solid;
+  width: 25%;
+  padding: 10px;
+  margin: 20px;
+}
+.box img{
+  height:50%;
+  width:100%;
+  object-fit: cover;
+}
+
+.footer {
+  background-color: #7010C0;
+  margin: 0;
+  padding: 14px 16px;
+  color: #FDEFEB;
+
+}
+.f{
+  padding: 14px 16px;
+  
+}
+ul{
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.container {
+  align-items: center;
+  padding-right: 10%;
+  padding-left: 10%;
+  margin-right: 0;
+  margin-left: 0;
+}
