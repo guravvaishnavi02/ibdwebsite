@@ -87,6 +87,10 @@ h3{
     width:100%;
     flex-direction: column;
   }
+    #showcase {
+    width:100%;
+    flex-direction: column;
+  }
 }
 
 .box{
