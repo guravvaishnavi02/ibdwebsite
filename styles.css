@@ -1,7 +1,7 @@
 body {
   display: block;
   margin: 0;
-  font-family: Lato, Helvetica, sans-serif;
+  font-family: Lato;
 }
 
 h1{
@@ -14,36 +14,45 @@ h3{
 }
 
 .l1{
-  padding-top: 10%;
+  padding-top: 5%;
   padding-right: 30%;
 }
 
 
-#l2{
-  padding-top: 20%;
+.l2{
+  padding-top: 15%;
   padding-right: 30%;
 }
 
 /* The navigation bar */
 .navbar {
-  display:inline-flex;
-  overflow: hidden;
+  display:inline-block;
   top: 0;
   list-style-type: none;
   padding-inline-start: 0;
   margin-top: 0;
-  padding-top: 3%;
-  vertical-align: middle;
+  padding-top: 2%;
 }
 
 /* Links inside the navbar */
+.disabled {
+  pointer-events: none;
+} 
+
 .navbar li {
   float: left;
-  display: block;
   color: #233348;
   text-align: center;
   text-decoration: none;
   width: 15%;
+  font-size: 1.3em;
+  vertical-align: middle;
+  height: 50px;
+  line-height: 50px;
+}
+
+.navbar li img{
+  float: left;
 }
 
 /* Change background on mouse-over */
@@ -54,6 +63,20 @@ h3{
 .navbar li.active {
   color: #814C8A;
   text-decoration: underline;
+}
+/* Hide the link that should open and close the topnav on small screens */
+.navbar .icon {
+  display: none;
+}
+#name{
+  width:40%;
+}
+
+.menu {
+  width: 35px;
+  height: 5px;
+  background-color: #814C8A;
+  margin: 6px 0;
 }
 
 #showcase{
@@ -74,12 +97,14 @@ h3{
   height:100vh;
   margin: 0;
 }
+
 .land{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   padding-bottom: 10%;
+  flex-wrap: wrap;
 }
+
 .land3{
   background : url(images/element1.png);
   background-repeat: no-repeat;
@@ -94,6 +119,7 @@ h3{
 }
 
 .box{
+  display:block;
   border-radius: 25px;
   border-style: solid;
   border-color: coral;
@@ -120,15 +146,19 @@ h3{
   padding: 14px 16px;
   color: #fff;
 }
+.foot{
+  display: flex;
+}
 
 .f{
   padding: 14px 10px;
   width: 20%;  
 }
-.f ul{
+
+.f ol{
   list-style: none;
   padding-inline-start: 0;
-  line-height:150%
+  line-height:150%;
 
 }
 
@@ -138,4 +168,85 @@ h3{
   padding-left: 10%;
   margin-right: 0;
   margin-left: 0;
+}
+
+#add{
+  width:30%;
+}
+
+#add a{
+  text-decoration: none; 
+  color: #FFF;
+}
+
+
+@media screen and (max-width: 600px) {
+  
+  .navbar li:not(:first-child) {display: none;}
+  .navbar li.icon {
+    float: right;
+    display: block;
+    font-size: 1.3em;
+    width: 5%;
+    overflow: visible;
+  }
+  #name{
+    width:90%;
+  }
+  .navbar li{
+    overflow: hidden;
+    text-align: left;
+  }
+
+  .navbar.responsive {position: relative;}
+  .navbar.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 2%;
+    width: 10%;
+    overflow: visible;
+  }
+  .navbar.responsive li {
+    overflow: hidden;
+    float: none;
+    display: flex;
+    text-align: left;
+    width: 100%;
+  }
+
+
+  .land{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .box{
+    width: 75%;
+  }
+
+  .foot{
+    flex-direction: column;
+  }
+  .f{
+    width:90%;
+    padding: 0%;
+  }
+  .f h4{
+    margin: 0%;
+  }
+  .f ol{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .f li{
+    padding: 2px;
+  }
+  #add{ 
+    margin-top: 5%;
+    width: 100%;  
+  }
+  #log{
+    display: none;
+  }
 }
