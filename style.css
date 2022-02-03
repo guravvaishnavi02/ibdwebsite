@@ -81,13 +81,13 @@ body{
   
 .navbar .dropdown:hover .dropdown-content {
     display: block;
-  }
+}
 
-  .navbar .icon {
+.navbar .icon {
     display: none;
-  }
+}
 
-  #triangle-down {
+#triangle-down {
     width: 0;
     height: 0;
     border-left: 6px solid transparent;
@@ -95,13 +95,14 @@ body{
     border-top: 6px solid #7356a4;
     display: inline-block;
     padding-bottom: 5px;
-  }
-  .menu {
+}
+
+.menu {
     width: 35px;
     height: 5px;
     background-color: #7356a4;
     margin: 6px 0;
-  }
+}
 
 /*nav bar end*/
 #showcase{
@@ -113,12 +114,12 @@ body{
     flex-direction:column;
     margin: 0;
     max-height: fit-content;
-  }
+}
 
 h1{
     font-size: 4em; 
     color:#7356a4;
-  }
+}
 
 .container{
     margin-left: 7%;
@@ -137,59 +138,64 @@ h1{
     min-height: 100vh;
     align-items: center;
     flex-direction: column;
-  }
+}
 
 #a1{
   text-align: center;
   padding: 0 40% 0 0;
   display: block;
 }
+
 #a1 h1{
   margin-block-start: 0;
     margin-block-end: 0;
     padding-top: 15%;
     display: block;
 }
+
 #a2{
   text-align: center;
   padding: 0 0 0 40%;
 }
+
 #a2 ul{
   list-style-type: none;
   margin-block-start: 0;
   margin-block-end: 0;
   padding-inline-start: 0;
 }
-  .land3{
+
+.land3{
     background : url(images/element1.png);
     background-repeat: no-repeat;
     background-position: bottom right;
-  
-  }
+}
 
-  .land4{
+.land4{
     background : url(images/element2.png), url(images/elementf2.png);
     background-repeat: no-repeat, no-repeat;
     background-position: left, bottom right;
-  }
-  .l1{
-      padding-left: 4%;
+}
+
+.l1{
+    padding-left: 4%;
     padding-top: 5%;
     padding-right: 30%;
-  }
-  .l1 h1{
+}
+
+.l1 h1{
     margin-bottom: 0;
-  }
+}
   
-  .land{
+.land{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-  }
+}
   
 
-  .box{
+.box{
     display:block;
     border-radius: 25px;
     border-style: solid;
@@ -197,28 +203,31 @@ h1{
     width: 25%;
     padding: 0px;
     margin: 3.8%;
-  }
-  .box img {
-      max-width: 100%;
-      max-height: 100%;
-  }
-  .box h3{
+}
+
+.box img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.box h3{
     padding: 10px;
     text-decoration: underline;
-  }
-  .box p{
-    padding: 0 10px 0 10px;
-  }
+}
 
-  .footer {
+.box p{
+    padding: 0 10px 0 10px;
+}
+
+.footer {
     background : url(images/elementf1.png), linear-gradient(to bottom, #7010C0, #8A4AC0);
     background-repeat: no-repeat, no-repeat;
     background-position: bottom left, right;
     margin: 0;
     margin-top: 5%;
-  }
+}
 
-  .content2 {
+.content2 {
     padding: 20px;
     overflow: hidden;
 }
@@ -235,24 +244,24 @@ h1{
     font-size: 1em;
     width: 25%;
     font-weight: 100;
-
     margin-left: 15px;
     margin-top: 6px;
 }
+
 .content2 a{
-  color: #fff;
-  text-decoration: none;
+    color: #fff;
+    text-decoration: none;
 }
 
-  @media screen and (max-width: 992px) {
-    .navbar li:not(:first-child) {display: none;}
-    .navbar li.icon {
+@media screen and (max-width: 992px) {
+  .navbar li:not(:first-child) {display: none;}
+  .navbar li.icon {
       display: block;
       font-size: 1.3em;
       overflow: visible;
       position: absolute;
       top: 4%;
-    right: 7%;
+      right: 7%;
     }
 
     .navbar li{
@@ -265,6 +274,7 @@ h1{
       width:auto;
       float: right;
     }
+    
     .navbar.responsive li {
       overflow: hidden;
       float: none;
@@ -273,9 +283,11 @@ h1{
       width: 100%;
       margin-top: 0;
     }
+    
     .navbar.responsive a{
         margin-top: 0;
     }
+    
     .navbar.responsive.dropdown-content a{
         display: none;
     }
@@ -283,17 +295,21 @@ h1{
     .navbar .content img{
         width: 50px;
     }
+    
     .navbar .content h3{
         font-size: 1em;
     }
+    
     .l1{
         padding-left: 10%;
         padding-right: 10%;
         text-align: center;
     }
+    
     h1{
       font-size: 2.5em;
     }
+    
     #land2{
       background : none;
       background-color: #FDEFEB;
@@ -304,17 +320,21 @@ h1{
       align-items: center;
       flex-direction: column;
     }
+    
     #a1{
       padding: 0;
       margin-top: 10vh;
     }
+    
     #a1 p{
       padding: 0 10% 10% 10%;
     }
+    
     #a2{
       padding: 0;
       margin-top: 10vh;
     }
+    
     .land{
         padding-left: 10%;
         padding-right: 10%;
@@ -326,16 +346,18 @@ h1{
         margin-left:0 ;
         margin-right: 0;
     }
+    
     .content2 svg{
       margin: 0 15px 0 15px;
     }
+    
     .content2 img{
       width: 50px;
-  }
+    }
+    
     .content2 h3{
       font-size: 1em;
       display: block;
       width: auto;
-
+    }
   }
-  }  
