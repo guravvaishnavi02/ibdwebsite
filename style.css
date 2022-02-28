@@ -2,8 +2,11 @@ body{
   display: block;
   margin: 0;
   font-family: Lato;
+  line-height: 1.6;
 }
-
+.navbar{
+  line-height: normal;
+}
 .navbar .content {
   width: 400px;
   padding: 20px;
@@ -18,9 +21,10 @@ body{
 .navbar .content h3{
   margin-left: 15px;
   display: block;
-  margin-top: 7.5px;
-  color: #7356a4;
+  margin-top: 5px;
+  color: #7010C0;
   font-size: 1.5em;
+
 }
 
 .navbar ul{
@@ -41,11 +45,11 @@ body{
   
 .navbar  li a, .dropbtn {
   display: inline-block;
-  color: #7356a4;
+  color: #7010C0;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  margin-top: 70px;
+  margin-top: 40px;
 }
 
 .navbar li a:hover, .dropdown:hover .dropbtn {
@@ -66,7 +70,7 @@ body{
 }
   
 .navbar .dropdown-content a {
-  color: #7356a4;
+  color: #7010C0;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -76,7 +80,7 @@ body{
   
 .navbar .dropdown-content a:hover {
   color:  #f9f9f9; 
-  background-color: #7356a4;
+  background-color: #7010C0;
 }
   
 .navbar .dropdown:hover .dropdown-content {
@@ -92,7 +96,7 @@ body{
   height: 0;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-  border-top: 6px solid #7356a4;
+  border-top: 6px solid #7010C0;
   display: inline-block;
   padding-bottom: 5px;
 }
@@ -100,7 +104,7 @@ body{
 .menu {
   width: 35px;
   height: 5px;
-  background-color: #7356a4;
+  background-color: #7010C0;
   margin: 6px 0;
 }
 
@@ -114,7 +118,6 @@ body{
   flex-direction:column;
   margin: 0;
   max-height: fit-content;
-
 }
 
 #showcased{
@@ -127,10 +130,16 @@ body{
   margin: 0;
   max-height: fit-content;
 }
+.one{
+  text-align: center;
+}
+.one p:hover{
+  transform: scale(1.1);
+}
 
 h1{
   font-size: 4em; 
-  color:#7356a4;
+  color:#7010C0;
 }
 
 .container{
@@ -139,42 +148,41 @@ h1{
 }
 
 #land2{
-  background : url(images/body1.svg);
-  background-repeat: no-repeat;
-  background-position: bottom 20% left 25%;
-  background-size: 25%;
   background-color: #FDEFEB;
-  display: flex;
   margin: 0;
   max-height: fit-content;
   min-height: 100vh;
+
+}
+.mv{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
-  flex-direction: column;
+  padding: 10% 0 10% 0;
 }
-
-#a1{
+.a1{
+  width: 50%;
   text-align: center;
-  padding: 0 40% 0 0;
+  display: inline-block;
+}
+.a1:hover{
+  transform: scale(1.1);
+}
+.a1 img{
+  height: 200px;
+  background-color: #fff;
+}
+.a1 h1{
+  margin-block-start: 0;
+  margin-block-end: 0;
   display: block;
 }
 
-#a1 h1{
-  margin-block-start: 0;
-  margin-block-end: 0;
-  padding-top: 15%;
-  display: block;
-}
-
-#a2{
-  text-align: center;
-  padding: 0 0 0 40%;
-}
-
-#a2 ul{
-  list-style-type: none;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  padding-inline-start: 0;
+.a1 ul{
+  padding-left: 25%;
+  display:block;
+  text-align: left;
 }
 
 .land3{
@@ -193,10 +201,11 @@ h1{
   padding-left: 4%;
   padding-top: 5%;
   padding-right: 30%;
+
 }
 
 .l1 h1{
-  margin-bottom: 0;
+  margin-bottom: 4%;
 }
   
 .land{
@@ -215,6 +224,11 @@ h1{
   padding: 0px;
   margin: 3.8%;
   overflow: hidden; 
+  background-color: #fff;
+}
+
+.box:hover{
+  transform: scale(1.1);
 }
 
 .box img {
@@ -242,6 +256,7 @@ h1{
   background-position: bottom left, right;
   margin: 0;
   margin-top: 5%;
+  line-height: normal;
 }
 
 .content2 {
@@ -250,7 +265,7 @@ h1{
 }
 
 .content2 svg {
-  margin-left: 15px;
+  margin-left: 50px;
   float: left;
   width : 50px;
 }
@@ -268,6 +283,20 @@ h1{
 .content2 a{
   color: #fff;
   text-decoration: none;
+
+}
+
+.content2 #copy{
+  padding-left: 50px;
+  text-align: right;
+}
+
+.content2 #conus{
+  text-align: center;
+}
+
+.content2 #name{
+  text-align: left;
 }
 
 #bd{
@@ -279,6 +308,8 @@ h1{
     align-items: center;
     flex-direction: column;
 }
+
+
 
 @media screen and (max-width: 992px) {
   .navbar li:not(:first-child) {
@@ -351,18 +382,20 @@ h1{
     flex-direction: column;
   }
     
-  #a1{
+  .mv{
+    flex-direction:column;
+  }
+  .a1{
+    width: auto;
     padding: 0;
     margin-top: 10vh;
   }
     
-  #a1 p{
+  .a1 p{
     padding: 0 10% 10% 10%;
   }
-    
-  #a2{
-    padding: 0;
-    margin-top: 10vh;
+  .a1 ul{
+    padding-inline-start: 40px;
   }
     
   .land{
@@ -389,5 +422,21 @@ h1{
     font-size: 1em;
     display: block;
     width: auto;
+  }
+  
+  .content2 #copy{
+  padding-left: 0px;
+  text-align: left;
+  }
+
+  .content2 #conus{
+  text-align: left;
+  }
+
+  .content2 #name{
+  text-align: left;
+  }
+  .one{
+    margin-top: 30%;
   }
 }  
